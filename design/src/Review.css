@@ -1,129 +1,213 @@
-.rev{
-    width: 1844;
-        height: 653;
-        transform: rotate(0deg);
-        opacity: 1;
-        top: 4517px;
-        left: 38px;
-        border: 3px solid #FFC250
-}
-.what{
-    width: 666;
-        height: 132;
-        transform: rotate(0deg);
-        opacity: 1;
-        top: 4521px;
-        left: 627px;
-        font-family: Gerbil;
-            font-weight: 400;
-            font-style: Regular;
-            font-size: 56px;
-            line-height: 66px;
-            letter-spacing: -2.5%;
-            text-align: center;
-}
-.color{
-    width: 879;
-        height: 358;
-        transform: rotate(0deg);
-        opacity: 1;
-        top: 4711px;
-        left: 520px;
-        border-radius: 60px;
-        background: #D7EEDD4D;
-}
-.element{
-    width: 703;
-        height: 252;
-        transform: rotate(0deg);
-        opacity: 1;
-        top: 4764px;
-        left: 608px;
-        font-family: Satoshi;
-            font-weight: 400;
-            font-style: Regular;
-            font-size: 30px;
-            line-height: 42px;
-            letter-spacing: 0%;
-            text-align: center;
+/* Review — Figma 1844×653 area, white bg */
+.review-section {
+  width: 100%;
+  max-width: var(--figma-frame-width);
+  margin: 0 auto;
+  padding: var(--section-gap) var(--gutter);
+  background: var(--color-white);
+  overflow: hidden;
 }
 
-.rev {
-    position: relative;
-    /* MUST HAVE THIS */
-    width: 1882px;
-    /* Max left + width: 1587+295 */
-    height: 653px;
-    /* Max top + height: 358+295 */
-    margin: 0 auto;
+.review-stage {
+  position: relative;
+  width: 100%;
+  max-width: 117.625rem;
+  min-height: clamp(28rem, 34vw, 40.8125rem);
+  margin: 0 auto;
 }
 
-.rev .a {
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
+.review-heading {
+  position: relative;
+  z-index: 3;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(1.75rem, 2.916667vw, 3.5rem);
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+  text-align: center;
+  color: var(--color-black);
+  margin: 0 auto;
+  max-width: 41.625rem;
+  padding-top: clamp(0.25rem, 0.21vw, 0.25rem);
 }
 
+.review-heading .green-highlight {
+  background: var(--color-green-pill);
+  padding: clamp(2px, 0.21vw, 4px) clamp(0.5rem, 0.73vw, 0.875rem);
+  border-radius: 2.5rem;
+  display: inline-block;
+}
+
+.review-heading .orange-highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.review-heading .orange-highlight::after {
+  content: '';
+  position: absolute;
+  left: -2%;
+  right: -2%;
+  bottom: 0.1em;
+  height: clamp(5px, 0.42vw, 8px);
+  background: linear-gradient(90deg, #ff9a3c 0%, #ffc250 50%, #ff9a3c 100%);
+  border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%;
+  z-index: -1;
+}
+
+.review-avatars {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.review-avatar {
+  border-radius: var(--radius-circle);
+  object-fit: cover;
+  position: absolute;
+  pointer-events: auto;
+}
+
+/* Figma positions relative to review block top */
 .mem11 {
-    width: 125px;
-    height: 123px;
-    top: 4px;
-    /* 4521 - 4517 */
-    left: 161px;
+  width: clamp(4rem, 6.51vw, 7.8125rem);
+  height: clamp(3.9rem, 6.41vw, 7.6875rem);
+  top: 0.6%;
+  left: 8.5%;
 }
 
 .mem12 {
-    width: 74px;
-    height: 74px;
-    top: 219px;
-    /* 4736 - 4517 */
-    left: 71px;
+  width: clamp(2.5rem, 3.85vw, 4.625rem);
+  height: clamp(2.5rem, 3.85vw, 4.625rem);
+  top: 33%;
+  left: 3.8%;
 }
 
 .mem13 {
-    width: 216px;
-    height: 216px;
-    top: 253px;
-    /* 4770 - 4517 */
-    left: 204px;
+  width: clamp(5.5rem, 11.25vw, 13.5rem);
+  height: clamp(5.5rem, 11.25vw, 13.5rem);
+  top: 38%;
+  left: 10.8%;
 }
 
 .mem14 {
-    width: 123px;
-    height: 123px;
-    top: 469px;
-    /* 4986 - 4517 */
-    left: 38px;
+  width: clamp(4rem, 6.41vw, 7.6875rem);
+  height: clamp(4rem, 6.41vw, 7.6875rem);
+  top: 72%;
+  left: 2%;
 }
 
 .mem15 {
-    width: 146px;
-    height: 146px;
-    top: 4px;
-    /* 4521 - 4517 */
-    left: 1643px;
+  width: clamp(4.5rem, 7.6vw, 9.125rem);
+  height: clamp(4.5rem, 7.6vw, 9.125rem);
+  top: 0.6%;
+  right: 11%;
+  left: auto;
 }
 
 .mem16 {
-    width: 90px;
-    height: 90px;
-    top: 83px;
-    /* 4600 - 4517 */
-    left: 1478px;
+  width: clamp(3rem, 4.69vw, 5.625rem);
+  height: clamp(3rem, 4.69vw, 5.625rem);
+  top: 12%;
+  right: 22%;
+  left: auto;
 }
 
 .mem17 {
-    width: 112px;
-    height: 112px;
-    top: 236px;
-    /* 4753 - 4517 */
-    left: 1500px;
+  width: clamp(3.5rem, 5.83vw, 7rem);
+  height: clamp(3.5rem, 5.83vw, 7rem);
+  top: 36%;
+  right: 20%;
+  left: auto;
 }
 
 .mem18 {
-    width: 295px;
-    height: 295px;
-    top: 358px;
-    /* 4875 - 4517 */
-    left: 1587px;
+  width: clamp(6rem, 15.36vw, 18.4375rem);
+  height: clamp(6rem, 15.36vw, 18.4375rem);
+  top: 55%;
+  right: 2%;
+  left: auto;
+}
+
+.review-quote {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  width: min(100%, clamp(18rem, 45.78vw, 54.9375rem));
+  margin: clamp(6rem, 12vw, 12rem) auto 0;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border-radius: clamp(1.5rem, 3.125vw, 3.75rem);
+  background: rgba(245, 245, 245, 0.85);
+  box-sizing: border-box;
+}
+
+.quote-mark {
+  flex-shrink: 0;
+  width: clamp(2rem, 3.6vw, 4.3125rem);
+  height: auto;
+}
+
+.element {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: clamp(1rem, 1.5625vw, 1.875rem);
+  line-height: 1.4;
+  text-align: center;
+  color: var(--color-black);
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .review-stage {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .review-avatars {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+    order: 3;
+    pointer-events: auto;
+  }
+
+  .review-avatar {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1;
+    max-width: 5rem;
+    margin: 0 auto;
+  }
+
+  .review-quote {
+    margin-top: 0;
+    order: 2;
+  }
+
+  .review-heading {
+    order: 1;
+  }
+}
+
+@media (max-width: 375px) {
+  .review-avatars {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .review-avatar {
+    max-width: 4rem;
+  }
 }

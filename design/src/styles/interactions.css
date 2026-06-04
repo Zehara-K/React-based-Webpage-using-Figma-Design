@@ -1,0 +1,51 @@
+.btn-interactive,
+.read-more,
+.read-m,
+.footer-link,
+.nav-links li,
+.nav-item {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.btn-interactive:hover,
+.read-more:hover,
+.read-m:hover,
+.footer-link:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(14, 14, 14, 0.12);
+}
+
+.nav-links li:hover,
+.nav-item:hover {
+  transform: scale(1.05);
+}
+
+.avatar,
+.review-avatar {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.avatar:hover,
+.review-avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 28px rgba(14, 14, 14, 0.18);
+  z-index: 10;
+}
+
+.service-arrow {
+  transition: transform 0.25s ease;
+}
+
+.service-row:hover .service-arrow {
+  transform: translateX(4px);
+}
+
+.subscribe-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(14, 14, 14, 0.2);
+}

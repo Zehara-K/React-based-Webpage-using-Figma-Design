@@ -2,22 +2,21 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav className="navbar">
-      {/* Logo */}
+    <nav className="navbar" aria-label="Main navigation">
       <div className="logo">Elementum</div>
-      {/* Navigation Links */}
+
       <ul className="nav-links">
-        <li>Home</li>
-        <li>Studio</li>
-        <li>Services</li>
-        <li>Contact</li>
-        <li>FAQ's</li>
+        <li className="nav-item nav-home">Home</li>
+        <li className="nav-item nav-studio">Studio</li>
+        <li className="nav-item nav-services">Services</li>
+        <li className="nav-item nav-contact">Contact</li>
+        <li className="nav-item nav-faqs">FAQ&apos;s</li>
       </ul>
-      {/* Menu Icon */}
-      <div className="menu-icon">
-        <span></span>
-        <span></span>
-      </div>
+
+      <button type="button" className="menu-icon" aria-label="Open menu">
+        <span />
+        <span />
+      </button>
     </nav>
   );
 }

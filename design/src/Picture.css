@@ -1,118 +1,122 @@
-/* Main Avatar Container */
+/* Team Avatar Section */
 .team-avatars {
   position: relative;
-  width: 1920px;
-  height: 1254px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: var(--figma-frame-width);
+  height: 30rem;
+  margin: 1rem auto 0;
+  background: transparent;
+  overflow: visible;
 }
 
-/* Common Avatar Style */
+/* Common Avatar Styles */
 .avatar {
   position: absolute;
-  width: 226px;
-  height: 226px;
-  border-radius: 50%;
+  border-radius: var(--radius-circle);
   object-fit: cover;
+  opacity: 1;
 }
 
-/* White Border (Ellipse 261 & 258) */
 .border-avatar {
-  border: 8px solid #FFFFFF;
+  border: 6px solid var(--color-white);
   box-sizing: border-box;
 }
 
-/* Member 1 */
-.avatar1 {
-  top: 801px;
-  left: 553px;
+/* Avatar Positions */
+
+/* 1 */
+.avatar-1 {
+  top: 12rem;
+  left: 2%;
+  width: 14.125rem;
+  height: 14.125rem;
 }
 
-/* Member 2 */
-.avatar2 {
-  top: 856px;
-  left: 977px;
-  width: 225px;
-  height: 227px;
+/* 2 */
+.avatar-2 {
+  top: 8rem;
+  left: 10%;
+  width: 14.125rem;
+  height: 14.125rem;
 }
 
-/* Member 3 */
-.avatar3 {
-  top: 940px;
-  left: 1144px;
-  border: 8px solid #FFFFFF;
+/* 3 */
+.avatar-3 {
+  top: 0;
+  left: 29%;
+  width: 14.125rem;
+  height: 14.125rem;
 }
 
-/* Member 4 */
-.avatar4 {
-  top: 801px;
-  left: 1414px;
+/* 4 */
+.avatar-4 {
+  top: 14rem;
+  left: 35%;
+  width: 14.125rem;
+  height: 14.1875rem;
 }
 
-/* Member 5 */
-.avatar5 {
-  top: 960px;
-  left: 1656px;
-  width: 226px;
-  height: 227px;
+/* 5 */
+.avatar-5 {
+  top: 4rem;
+  left: 51%;
+  width: 14.0625rem;
+  height: 14.1875rem;
 }
 
-/* Member 6 */
-.avatar6 {
-  top: 1027px;
-  left: 677px;
-  width: 226px;
-  height: 227px;
+/* 6 */
+.avatar-6 {
+  top: 8rem;
+  left: 60%;
+  width: 14.125rem;
+  height: 14.125rem;
 }
 
-/* Member 7 */
-.avatar7 {
-  top: 996px;
-  left: 38px;
+/* 7 */
+.avatar-7 {
+  top: 0;
+  left: 74%;
+  width: 14.125rem;
+  height: 14.125rem;
 }
 
-/* Member 8 */
-.avatar8 {
-  top: 940px;
-  left: 199px;
-  border: 8px solid #FFFFFF;
+/* 8 */
+.avatar-8 {
+  top: 10rem;
+  left: 86%;
+  width: 14.125rem;
+  height: 14.1875rem;
 }
 
-.box {
-  position: absolute;
-  top: 385.21px;
-  left: 1594.06px;
-  transform: rotate(60deg);
-  opacity: 1;
-}
-
-.light {
-  position: absolute;
-  width: 166px;
-  height: 166px;
-  top: 1595px;
-  left: 877px;
-  transform: rotate(0deg);
-  opacity: 1;
-  background: #FF2020;
-  backdrop-filter: blur(150px);
-}
-
-/* Responsive Design */
+/* Tablet */
 @media (max-width: 768px) {
   .team-avatars {
-    width: 100%;
     height: auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
   }
 
   .avatar {
-    position: static;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
+    position: relative;
+    top: auto !important;
+    left: auto !important;
+    width: 6rem !important;
+    height: 6rem !important;
+    justify-self: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+  .team-avatars {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .box,
-  .light {
-    display: none;
+  .avatar {
+    width: 5rem !important;
+    height: 5rem !important;
   }
 }

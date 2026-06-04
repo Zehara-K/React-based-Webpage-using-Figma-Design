@@ -1,26 +1,39 @@
-/* 1. Reset - must have */
+@import './styles/fonts.css';
+@import './styles/tokens.css';
+@import './styles/interactions.css';
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
-    font-family: 'Satoshi', sans-serif;
-    background: #D7EEDD;
-    overflow-x: hidden;
-    /* no horizontal scroll */
+  font-family: var(--font-body);
+  background: var(--color-frame-bg);
+  overflow-x: hidden;
+  color: var(--color-black);
+  min-width: 0;
 }
 
-/* 2. Main wrapper from App.jsx <div className="frame"> */
 .frame {
-    position: relative;
-    /* This makes it the anchor for ALL components */
-    width: 1920px;
-    /* Figma width */
-    height: 6665px;
-    /* Figma height 6665px you told me */
-    background: #D7EEDD;
-    margin: 0 auto;
-    /* centers on big screens */
+  position: relative;
+  width: 100%;
+  max-width: var(--figma-frame-width);
+  min-height: clamp(100vh, 347.135417vw, var(--figma-frame-height));
+  margin: 0 auto;
+  background: var(--color-frame-bg);
+  overflow-x: hidden;
+}
+
+/* Figma: hero heading + 1920×1254 avatar block on white */
+.hero-band {
+  position: relative;
+  width: 100%;
+  background: var(--color-white);
+  overflow: hidden;
 }

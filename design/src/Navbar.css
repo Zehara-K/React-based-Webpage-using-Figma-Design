@@ -1,65 +1,140 @@
-/* Navbar Container */
+/* Figma navbar: 1920 × 100, #FFFFFF */
 .navbar {
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  height: clamp(60px, 6vw, 100px);
-  background-color: #FFFFFF;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 clamp(20px, 8vw, 160px);
+  height: var(--navbar-height);
+  background-color: var(--color-white);
   z-index: 100;
+  flex-shrink: 0;
 }
 
-/* Logo */
+/* Logo — 201×46 at top 27px, left 160px; Gerbil 28px / 46px line-height */
 .logo {
-  font-family: "Gerbil", serif;
-  font-size: clamp(20px, 2vw, 28px);
+  position: absolute;
+  top: var(--navbar-logo-top);
+  left: var(--navbar-logo-left);
+  width: clamp(7rem, 10.46875vw, 12.5625rem);
+  height: var(--navbar-logo-line);
+  font-family: var(--font-heading);
   font-weight: 400;
-  line-height: 1.5;
-  color: #000000;
-}
-
-/* Navigation */
-.nav-links {
+  font-size: var(--navbar-logo-size);
+  line-height: var(--navbar-logo-line);
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--color-black);
   display: flex;
-  gap: clamp(20px, 3vw, 64px);
+  align-items: center;
+}
+
+/* Nav group — items at top 38px; Figma left positions on 1920 frame */
+.nav-links {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* Home, Studio, Services, Contact, FAQ's */
-.nav-links li {
-  font-family: "Satoshi", sans-serif;
-  font-size: clamp(14px, 1.5vw, 18px);
+.nav-item {
+  position: absolute;
+  top: var(--navbar-link-top);
+  height: var(--navbar-link-line);
+  font-family: var(--font-body);
   font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
+  font-size: var(--navbar-link-size);
+  line-height: var(--navbar-link-line);
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--color-black);
   cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Two-line Menu Icon */
+/* 694px, 807px, 923px, 1055px, 1184px @ 1920 */
+.nav-home {
+  left: clamp(1.25rem, 36.145833vw, 43.375rem);
+  width: clamp(2.25rem, 2.552083vw, 3.0625rem);
+}
+
+.nav-studio {
+  left: clamp(3.5rem, 42.03125vw, 50.4375rem);
+  width: clamp(2.25rem, 2.708333vw, 3.25rem);
+}
+
+.nav-services {
+  left: clamp(5.5rem, 48.072917vw, 57.6875rem);
+  width: clamp(2.5rem, 3.541667vw, 4.25rem);
+}
+
+.nav-contact {
+  left: clamp(7.5rem, 54.947917vw, 65.9375rem);
+  width: clamp(2.5rem, 3.385417vw, 4.0625rem);
+}
+
+.nav-faqs {
+  left: clamp(9rem, 61.666667vw, 74rem);
+  width: clamp(2rem, 2.239583vw, 2.6875rem);
+}
+
+/* Two-line menu — 45.36px wide, 2px stroke; top 10.5px from navbar top */
 .menu-icon {
-  display: none;
+  position: absolute;
+  top: 35px;
+  right: 80px;
+  display: flex;
+  /* instead of none */
   flex-direction: column;
-  gap: 6px;
+  justify-content: space-between;
+  width: 26px;
+  height: 14px;
+  padding: 0;
+  border: none;
+  background: transparent;
   cursor: pointer;
 }
 
 .menu-icon span {
-  width: 30px;
-  height: 2px;
-  background-color: #000000;
+  display: block;
+  width: 100%;
+  height: 0;
+  border: none;
+  border-top: 2px solid var(--color-black);
+  background: transparent;
 }
 
-/* Responsive Design */
+/* Desktop: Figma absolute nav; hide hamburger */
+/* @media (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+} */
+
+/* Tablet / mobile: flex bar layout */
 @media (max-width: 768px) {
+  .logo {
+    position: static;
+    width: auto;
+    height: auto;
+    line-height: var(--line-height-body);
+    text-align: left;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--gutter);
+  }
+
   .nav-links {
     display: none;
   }
 
   .menu-icon {
     display: flex;
+    position: static;
   }
 }

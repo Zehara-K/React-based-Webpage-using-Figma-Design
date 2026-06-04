@@ -7,21 +7,20 @@ import Review from "./Review";
 import Details from "./Details";
 import "./App.css";
 
-
 function App() {
-    return (
-        <>
-        <div className="frame">
-            <Navbar />
-            <Hero />
-            <Picture/>
-            <About/>
-            <Services/>
-            <Review/>
-            <Details/>
-            </div>
-        </>
-    );
+  return (
+    <div className="frame">
+      <Navbar />
+      <div className="hero-band">
+        <Hero />
+        <Picture />
+      </div>
+      <About />
+      <Services />
+      <Review />
+      <Details />
+    </div>
+  );
 }
 
 export default App;

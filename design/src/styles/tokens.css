@@ -1,0 +1,60 @@
+:root {
+  /* Figma root frame */
+  --figma-frame-width: 120rem;
+  --figma-frame-height: 416.40625rem;
+  --color-frame-bg: #ffffff;
+
+  --color-bg: #d7eedd;
+  --color-white: #ffffff;
+  --color-black: #0e0e0e;
+  --color-pink: #f5c2e7;
+  --color-green: #d8f3dc;
+  --color-green-pill: #dcfce7;
+  --color-yellow: #ffc250;
+  --color-red: #ff7171;
+  --color-red-alt: #ff6d6d;
+  --color-violet: #934cec;
+  --color-gray-line: #b1b1b1;
+  --color-footer-bg: #d7eedd;
+  --color-quote-bg: rgba(215, 238, 221, 0.3);
+
+  --font-heading: 'New Gerbil', 'Gerbil', sans-serif;
+  --font-body: 'Satoshi', sans-serif;
+
+  --container-max: var(--figma-frame-width);
+
+  /* Figma navbar */
+  --navbar-height: clamp(3.75rem, 5.208333vw, 6.25rem);
+  --navbar-logo-left: clamp(1.25rem, 8.333333vw, 10rem);
+  --navbar-logo-top: clamp(0.75rem, 1.40625vw, 1.6875rem);
+  --navbar-logo-size: clamp(1.125rem, 1.458333vw, 1.75rem);
+  --navbar-logo-line: clamp(1.75rem, 2.395833vw, 2.875rem);
+
+  --navbar-link-top: clamp(1rem, 1.979167vw, 2.375rem);
+  --navbar-link-size: clamp(0.875rem, 0.9375vw, 1.125rem);
+  --navbar-link-line: clamp(1.125rem, 1.25vw, 1.5rem);
+
+  --gutter: clamp(1.25rem, 8.33vw, 10rem);
+  --section-gap: clamp(4rem, 8vw, 10.625rem);
+
+  --text-hero: clamp(2.25rem, 4.375vw, 5.25rem);
+  --text-display: clamp(2.5rem, 5.2vw, 6.25rem);
+  --text-h1: clamp(1.75rem, 2.917vw, 3.5rem);
+  --text-h2: clamp(1.5rem, 2.917vw, 3.5rem);
+  --text-body-lg: clamp(1rem, 1.25vw, 1.5rem);
+  --text-body: clamp(0.875rem, 1.042vw, 1.25rem);
+  --text-footer-title: clamp(1rem, 1.146vw, 1.375rem);
+  --text-footer-link: clamp(0.875rem, 1.042vw, 1.25rem);
+
+  --avatar-lg: clamp(3.75rem, 11.77vw, 14.125rem);
+  --avatar-md: clamp(3rem, 6.25vw, 8.5rem);
+  --avatar-sm: clamp(2.5rem, 4.5vw, 5.5rem);
+
+  --radius-pill: 3.125rem;
+  --radius-circle: 50%;
+  --radius-quote: clamp(1.5rem, 3.125vw, 3.75rem);
+
+  --line-height-tight: 1.2;
+  --line-height-heading: 1.36;
+  --line-height-body: 1.5;
+}
