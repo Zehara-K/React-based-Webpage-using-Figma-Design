@@ -1,0 +1,321 @@
+.dev{
+    position: relative;
+    width: 1920;
+        height: 1297;
+       transform: rotate(0deg);
+        opacity: 1;
+        top: 5369px;
+        background: #D7EEDD;
+}
+.a1{
+    position: absolute;
+    width: 163.537109375;
+    height: 121.5;
+    transform: rotate(0deg);
+    opacity: 1;
+    top: 5369px;
+    left: 671px;
+    border-width: 3px;
+    border: 3px solid #FF6D6D
+
+}
+.a2{
+    position: absolute;
+    width: 163.537109375;
+    height: 121.5;
+    opacity: 1;
+    top: 5369px;
+    left: 774.04px;
+    border-width: 3px;
+    transform: rotate(0deg);
+border: 3px solid #FF6D6D
+}
+.subscribe-section {
+    position: relative;
+    width: 1920px;
+    height: 1297px;
+    margin-top: 5369px;
+    overflow: visible;
+    /* from top of page */
+    background: #F8FAFF;
+    /* update with Figma color */
+}
+
+.subscribe-title {
+    position: absolute;
+    width: 904px;
+    /* you said 904px width */
+    height: 94px;
+    top: 140px;
+    /* 5509 - 5369 */
+    left: 580px;
+    font-size: 64px;
+    /* adjust from Figma text panel */
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    color: #1E3A8A;
+}
+
+.subscribe-subtitle {
+    position: absolute;
+    width: 556px;
+    /* 904 - 2*174, adjust if needed */
+    height: 36px;
+    top: 382px;
+    /* 5751 - 5369 */
+    left: 682px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    color: #4B5563;
+}
+
+.subscribe-btn {
+    position: absolute;
+    width: 233px;
+    height: 72px;
+    top: 456px;
+    /* 5825 - 5369 */
+    left: 844px;
+    border-radius: 100px;
+    background: #000;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btn-text {
+    position: absolute;
+    width: 141px;
+    height: 30px;
+    top: 21px;
+    /* 477 - 456 = 21px inside button */
+    left: 46px;
+    /* 890 - 844 = 46px inside button */
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.half {
+    position: absolute;
+    /* anchors to .subscribe-section */
+    width: 244px;
+    height: 244px;
+    top: 189px;
+    /* 5558 - 5369 */
+    left: 1622px;
+    /* from Figma */
+    background: #8B5CF6;
+    /* violet - update with exact Figma hex */
+    border-radius: 0 50% 0 50%;
+    /* makes left half-circle */
+    transform: rotate(-120deg);
+    transform-origin: center;
+}
+
+.l {
+    position: absolute;
+    width: 1600px;
+    height: 0;
+    /* Figma shows 0 height */
+    top: 628px;
+    /* 5997 - 5369 */
+    left: 160px;
+    border-top: 1px solid #3B82F6;
+    /* replace with Figma color */
+    /* rotation 0° = no transform needed */
+}
+
+/* 1. Company column: 279x279, top 6097, left 160 */
+.company-box {
+    position: absolute;
+    width: 279px;
+    height: 279px;
+    top: 728px;
+    /* 6097 - 5369 */
+    left: 160px;
+    /* border: 1px dashed red; remove after testing */
+}
+
+/* 2. Terms & Policies: 170x279, top 6097, left 586 */
+.terms-box {
+    position: absolute;
+    width: 170px;
+    height: 279px;
+    top: 728px;
+    left: 586px;
+    /* border: 1px dashed green; remove after testing */
+}
+
+/* 3. Follow Us: 130x279, top 6097, left 1108 */
+.follow-box {
+    position: absolute;
+    width: 130px;
+    height: 279px;
+    top: 728px;
+    left: 1108px;
+    /* border: 1px dashed blue; remove after testing */
+}
+
+/* 4. Contact: 226x249, top 6097, left 1534 */
+.contact-box {
+    position: absolute;
+    width: 226px;
+    height: 249px;
+    top: 728px;
+    left: 1534px;
+    /* border: 1px dashed purple; remove after testing */
+}
+
+/* Parent - must be relative to anchor all absolute children */
+.subscribe-section {
+    position: relative;
+    width: 1920px;
+    height: 1297px;
+    margin-top: 5369px;
+    background: #D7EEDD;
+}
+
+/* All 4 columns - absolute positioning, no collapsing */
+.footer-col {
+    position: absolute;
+    top: 728px;
+    /* 6097 - 5369 */
+}
+
+.company-col {
+    width: 279px;
+    height: 279px;
+    left: 160px;
+}
+
+.terms-col {
+    width: 170px;
+    height: 279px;
+    left: 586px;
+}
+
+.follow-col {
+    width: 130px;
+    height: 279px;
+    left: 1108px;
+}
+
+.contact-col {
+    width: 226px;
+    height: 249px;
+    left: 1534px;
+}
+
+/* Titles - all start at 0,0 inside their column */
+.footer-title {
+    font-family: Gerbil;
+        font-weight: 400;
+        font-style:normal;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-family: 'Gerbil', sans-serif;
+    color: #000;
+}
+.company-col .footer-title {
+    width: 180px;
+    height: 30px;
+}
+
+.terms-col .footer-title {
+    width: 170px;
+    height: 30px;
+}
+
+.follow-col .footer-title {
+    width: 130px;
+    height: 30px;
+}
+
+.contact-col .footer-title {
+    width: 226px;
+    height: 30px;
+}
+
+/* Links container - starts at 69px inside each column */
+.footer-links {
+    position: absolute;
+    top: 69px;
+    /* 6166 - 6097 */
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.company-col .footer-links {
+    width: 279px;
+    height: 210px;
+}
+
+.terms-col .footer-links {
+    width: 170px;
+    height: 210px;
+}
+
+.follow-col .footer-links {
+    width: 87px;
+    height: 210px;
+}
+
+.contact-col .footer-links {
+    width: 203px;
+    height: 180px;
+}
+
+/* Text styles */
+.footer-link {
+    font-family: Satoshi;
+        font-weight: 400;
+        font-style:normal;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0%;
+    color: #000;
+    text-decoration: none;
+    height: 30px;
+    flex-shrink: 0;
+    /* prevents collapse */
+}
+
+.footer-text {
+    font-family: 'Friends', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+    margin: 0;
+    height: 30px;
+    flex-shrink: 0;
+}
+.copyright {
+    position: absolute;
+    width: 303px;
+    height: 30px;
+    top: 1207px;
+    /* 6576 - 5369 */
+    left: 812px;
+    margin: 0;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+    text-align: center;
+    letter-spacing: 0;
+}

@@ -1,0 +1,26 @@
+/* 1. Reset - must have */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    background: #D7EEDD;
+    overflow-x: hidden;
+    /* no horizontal scroll */
+}
+
+/* 2. Main wrapper from App.jsx <div className="frame"> */
+.frame {
+    position: relative;
+    /* This makes it the anchor for ALL components */
+    width: 1920px;
+    /* Figma width */
+    height: 6665px;
+    /* Figma height 6665px you told me */
+    background: #D7EEDD;
+    margin: 0 auto;
+    /* centers on big screens */
+}

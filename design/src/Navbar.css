@@ -1,0 +1,65 @@
+/* Navbar Container */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: clamp(60px, 6vw, 100px);
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 clamp(20px, 8vw, 160px);
+  z-index: 100;
+}
+
+/* Logo */
+.logo {
+  font-family: "Gerbil", serif;
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  gap: clamp(20px, 3vw, 64px);
+  list-style: none;
+}
+
+/* Home, Studio, Services, Contact, FAQ's */
+.nav-links li {
+  font-family: "Satoshi", sans-serif;
+  font-size: clamp(14px, 1.5vw, 18px);
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  cursor: pointer;
+}
+
+/* Two-line Menu Icon */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  width: 30px;
+  height: 2px;
+  background-color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+}

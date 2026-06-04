@@ -1,0 +1,98 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: clamp(100px, 15vw, 200px) clamp(20px, 8vw, 308px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: "Gerbil", serif;
+  font-weight: 400;
+  font-size: clamp(36px, 5vw, 84px);
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: clamp(20px, 3vw, 40px);
+  max-width: 1305px;
+}
+
+/* Pink pill behind "changing" */
+.hero-title span.pink {
+  background: #F5C2E7;
+  border-radius: 50px;
+  padding: 0 20px;
+  display: inline-block;
+}
+
+/* Green pill + yellow underline behind "status" */
+.hero-title span.green {
+  background: #D8F3DC;
+  border-radius: 50px;
+  padding: 0 20px;
+  display: inline-block;
+  border-bottom: 6px solid #FFC250;
+}
+
+.hero-description {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.5;
+  color: #000;
+  max-width: 831px;
+  margin: 0 auto;
+}
+
+/* Violet ellipse */
+.violet-ellipse {
+  position: absolute;
+  width: clamp(100px, 10vw, 400px);
+  height: clamp(100px, 10vw, 400px);
+  top: 30%;
+  left: 5%;
+  background: radial-gradient(circle, rgba(147, 76, 236, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: 1;
+}
+
+/* Red vertical line */
+.red-line {
+  position: absolute;
+  width: 4px;
+  height: clamp(100px, 10vw, 358px);
+  top: 40%;
+  left: 10%;
+  background: #FF7171;
+  transform: rotate(-15deg);
+  z-index: 1;
+}
+
+/* Black vertical line */
+.black-line {
+  position: absolute;
+  width: 4px;
+  height: clamp(90px, 9vw, 347px);
+  top: 45%;
+  right: 15%;
+  background: #0E0E0E;
+  transform: rotate(25deg);
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 20px;
+    min-height: auto;
+  }
+
+  .violet-ellipse,
+  .red-line,
+  .black-line {
+    display: none;
+  }
+}

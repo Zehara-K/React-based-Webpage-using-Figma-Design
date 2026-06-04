@@ -1,0 +1,129 @@
+.rev{
+    width: 1844;
+        height: 653;
+        transform: rotate(0deg);
+        opacity: 1;
+        top: 4517px;
+        left: 38px;
+        border: 3px solid #FFC250
+}
+.what{
+    width: 666;
+        height: 132;
+        transform: rotate(0deg);
+        opacity: 1;
+        top: 4521px;
+        left: 627px;
+        font-family: Gerbil;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 56px;
+            line-height: 66px;
+            letter-spacing: -2.5%;
+            text-align: center;
+}
+.color{
+    width: 879;
+        height: 358;
+        transform: rotate(0deg);
+        opacity: 1;
+        top: 4711px;
+        left: 520px;
+        border-radius: 60px;
+        background: #D7EEDD4D;
+}
+.element{
+    width: 703;
+        height: 252;
+        transform: rotate(0deg);
+        opacity: 1;
+        top: 4764px;
+        left: 608px;
+        font-family: Satoshi;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 30px;
+            line-height: 42px;
+            letter-spacing: 0%;
+            text-align: center;
+}
+
+.rev {
+    position: relative;
+    /* MUST HAVE THIS */
+    width: 1882px;
+    /* Max left + width: 1587+295 */
+    height: 653px;
+    /* Max top + height: 358+295 */
+    margin: 0 auto;
+}
+
+.rev .a {
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.mem11 {
+    width: 125px;
+    height: 123px;
+    top: 4px;
+    /* 4521 - 4517 */
+    left: 161px;
+}
+
+.mem12 {
+    width: 74px;
+    height: 74px;
+    top: 219px;
+    /* 4736 - 4517 */
+    left: 71px;
+}
+
+.mem13 {
+    width: 216px;
+    height: 216px;
+    top: 253px;
+    /* 4770 - 4517 */
+    left: 204px;
+}
+
+.mem14 {
+    width: 123px;
+    height: 123px;
+    top: 469px;
+    /* 4986 - 4517 */
+    left: 38px;
+}
+
+.mem15 {
+    width: 146px;
+    height: 146px;
+    top: 4px;
+    /* 4521 - 4517 */
+    left: 1643px;
+}
+
+.mem16 {
+    width: 90px;
+    height: 90px;
+    top: 83px;
+    /* 4600 - 4517 */
+    left: 1478px;
+}
+
+.mem17 {
+    width: 112px;
+    height: 112px;
+    top: 236px;
+    /* 4753 - 4517 */
+    left: 1500px;
+}
+
+.mem18 {
+    width: 295px;
+    height: 295px;
+    top: 358px;
+    /* 4875 - 4517 */
+    left: 1587px;
+}
